@@ -3,5 +3,8 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  base: "/AuthorizedSoft/",
+  base: "/AuthorizedSoft/", // Change this to match your repo name
+  build: {
+    outDir: "dist",
+  },
 });
